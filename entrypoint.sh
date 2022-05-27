@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [[ -z "${PASSWORD}" ]]; then
   export PASSWORD="5c301bb8-6c77-41a0-a606-4ba11bbab084"
@@ -30,11 +30,11 @@ case "$AppName" in
 		;;
 esac
 
-bash /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
+sh /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
 
-bash /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
+sh /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
 echo /etc/nginx/conf.d/ss.conf
 cat /etc/nginx/conf.d/ss.conf
 
