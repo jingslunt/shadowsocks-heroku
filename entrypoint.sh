@@ -34,9 +34,9 @@ sh /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
 
-sh /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
-echo /etc/nginx/conf.d/ss.conf
-cat /etc/nginx/conf.d/ss.conf
+sh /conf/nginx_ss.conf > /etc/nginx/sites-enabled/ss.conf
+echo /etc/nginx/sites-enabled/ss.conf
+cat /etc/nginx/sites-enabled/ss.conf
 
 
 if [ "$AppName" = "no" ]; then
