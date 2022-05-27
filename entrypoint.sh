@@ -5,8 +5,6 @@ if [[ -z "${PASSWORD}" ]]; then
 fi
 echo ${PASSWORD}
 
-echo export PASSWORD_JSON="$(echo -n "$PASSWORD" | jq -Rc)"
-
 if [[ -z "${ENCRYPT}" ]]; then
   export ENCRYPT="chacha20-ietf-poly1305"
 fi
