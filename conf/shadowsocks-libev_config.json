@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Fast_open must be false on heroku
 cat <<EOF
 {
