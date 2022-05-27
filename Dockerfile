@@ -17,7 +17,6 @@ RUN set -ex\
     && wget -O /root/shadowsocks-plugin.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/${SHADOWSOCKS_VERSION}/shadowsocks-${SHADOWSOCKS_VERSION}.x86_64-unknown-linux-musl.tar.xz \
     && tar xvf /root/shadowsocks-plugin.tar.xz -C /root \
     && mv /root/ss* /usr/local/bin/ \
-    && rm -f /root/shadowsocks-plugin.tar.xz \
-    && apk del wget
+    && rm -f /root/shadowsocks-plugin.tar.xz
 
 CMD /entrypoint.sh
