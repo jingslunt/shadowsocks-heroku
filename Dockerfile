@@ -8,6 +8,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN set -ex\
     && apk add --no-cache libqrencode wget nginx jq \
+    && setcap 'cap_net_bind_service=+ep' /usr/sbin/nginx \ 
     && chmod +x /entrypoint.sh \
     && mkdir -p /etc/shadowsocks-libev /etc/nginx/conf.d /wwwroot \
     && wget -O /root/xray-plugin.tar.gz https://github.com/teddysun/xray-plugin/releases/download/${XRAY_PLUGIN_VERSION}/xray-plugin-linux-amd64-${XRAY_PLUGIN_VERSION}.tar.gz \
