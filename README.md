@@ -40,12 +40,12 @@ Manual configuration:
 ```sh
 Server: test.herokuapp.com (change test to your app name)
 Port: 443
-Password: The password filled in during deployment
+Password: The password filled in during deployment  ##需要查看herokuapp对应的变量
 Encry Method: chacha20-ietf-poly1305 (or other methods you fill in)
 Plugin: v2ray
 Plugin Transport mode: websocket-tls
 Hostname: Same as Server
-Path: "/" + value of V2_Path in app Config Vars
+Path: "/" + value of V2_Path in app Config Vars  ##需要查看herokuapp对应的变量
 ```
 
 Those without a client can also download from here (Android):
