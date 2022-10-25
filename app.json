@@ -9,7 +9,7 @@
     },
      "PASSWORD": {
       "description": "The password of shadowsocks, you can use uuid as the password (http://www.uuid.online/ online generation)",
-      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+      "value": "17146242-e9c1-4aeb-9f70-29a9d754316e"
     },
 
      "V2_Path": {
